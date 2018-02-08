@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>imooc-security-parent</artifactId>
+        <groupId>com.chenyu.security</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../imooc-security-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>imooc-security-browser</artifactId>
+    <packaging>jar</packaging>
+
+    <name>imooc-security-browser Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+
+    <dependencies>
+        <!--core 依赖-->
+        <dependency>
+            <groupId>com.chenyu.security</groupId>
+            <artifactId>imooc-security-core</artifactId>
+            <version>${imooc.security.version}</version>
+        </dependency>
+        <!--spring session 管理-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>imooc-security-browser</finalName>
+    </build>
+</project>
